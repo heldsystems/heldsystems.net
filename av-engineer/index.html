@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Joe Held – AV Systems Engineer & Programmer. Certified, cleared, and highly skilled in AV, IT, CAD, and control programming.">
+  <meta property="og:title" content="Joe Held – AV Engineer Resume">
+  <meta property="og:description" content="AV Systems Engineer & Programmer with DoD clearance, IT crossover, and advanced AV design skills.">
+  <meta property="og:image" content="https://heldsystems.net/images/resume-preview.png">
+  <meta property="og:url" content="https://heldsystems.net/resume">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="/manifest.json" rel="manifest">
+  <title>Joe Held - AV Engineer Resume</title>
+  <style>
+  body, .resume-container {
+    font-family: 'Inter', Calibri, sans-serif;
+  }
+    body {
+      margin: 0;
+      font-family: 'Inter', Calibri, sans-serif;
+      color: #111;
+      background-color: #111;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('/images/av-cad-bg.png') center center / cover no-repeat;
+      z-index: -1;
+      opacity: 1;
+      animation: zoomSlowly 90s ease-in-out infinite alternate;
+    }
+
+  .resume-container {
+    background-color: #fdfaf4;
+    color: #111;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    padding-top: 3rem;
+    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+  }
+  .resume-container:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.35)
+  }
+  h1, h2 {
+    color: #003366;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+  }
+  .contact {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fdfaf4;
+    padding: 1rem 0 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+  }
+  .header h1 {
+    font-size: 2.75rem;
+    margin: 0;
+    color: #003366;
+  }
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.headshot-wrapper {
+  flex: 0 0 120px; 
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.headshot {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+  .subheading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+  }
+  .contact {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  ul {
+    padding-left: 1.2rem;
+  }
+  .section {
+    margin-bottom: 1.5rem;
+  }
+  .project {
+    margin-bottom: 1rem;
+  }
+  .project strong {
+    display: inline-block;
+    width: 100px;
+  }
+  .job-title {
+    font-weight: bold;
+  }
+  .job-entry {
+    margin-bottom: 1.5rem;
+  }
+  .skills-columns,
+  .certifications-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .skills-columns ul,
+  .certifications-columns ul {
+    flex: 1 1 300px;
+  }
+
+  .skills-columns{
+    display: flex;
+    gap: 2rem;
+  }
+  .skills-columns ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    flex: 1;
+  }
+  .certifications-columns{
+    display: flex;
+    gap: 2rem;
+  }
+  .certifications-columns ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    flex: 1;
+    margin: 0;
+  }
+  .site-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #c6c6c6;
+    padding: 1rem 0;
+    background: transparent;
+  }
+.download-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #003366;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: background 0.2s ease;
+}
+.download-button:hover {
+  background: #0055aa;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #003366;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  transition: background 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #0055aa;
+}
+
+
+.progress-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 700px; /* Match resume width */
+  height: 4px;
+  background: transparent;
+  position: relative;
+}
+
+#scroll-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #003366, #00cc66);
+  border-radius: 2px;
+  transition: width 0.2s ease-out;
+}
+
+
+  @media print {
+    body {
+        background: #fff !important;
+    }
+    .resume-container {
+        box-shadow: none !important;
+        border-radius: 0;
+    }
+    .site-footer {
+        display: none;
+    }
+    .download-button {
+        display: none;
+    }
+}
+
+    @keyframes zoomSlowly {
+      0% {
+        background-size: 105%;
+      }
+      100% {
+        background-size: 110%;
+      }
+    }
+
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+
+</head>
+<body>
+
+    <div class="progress-wrapper">
+      <div class="progress-container">
+        <div id="scroll-progress"></div>
+      </div>
+    </div>
+
+    <div class="resume-container">
+        <a href="/documents/Joe_Held-AV_Engineer.pdf" download class="download-button">Download PDF</a>
+          <div class="header">
+            <div class="header-flex">
+              <div class="headshot-wrapper">
+                <img src="/images/headshot.jpg" alt="Joe Held Headshot" class="headshot">
+              </div>
+              <div class="header-text">
+                <h1>Joe Held</h1>
+                <div class="subheading"><i>Audio Visual Systems Engineer & Programmer</i></div>
+                <div class="contact">
+                  443.824.2250 | 
+                  <a href="mailto:joe.held@gmail.com">joe.held@gmail.com</a> | 
+                  <a href="https://heldsystems.net">heldsystems.net</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <h2 data-animate>PROFILE</h2>
+    <p>
+        AV Systems Engineer and Programmer with AVIXA CTS-I certification, active DoD TS/SCI clearance, and a US Coast Guard Master Captain’s License. Proven track record designing, programming, and deploying mission-critical AV systems in secure government, corporate, and commercial environments. Expert in AV-over-IP, Crestron SIMPL/SIMPL#, AMX NetLinx, and signal routing across complex networked infrastructures.
+    </p>
+    <p>
+        Skilled in technical documentation and CAD-based AV system design (AutoCAD, Revit), with a strong foundation in enterprise IT systems, remote access, and VLAN/network configuration. Adept at bridging AV and IT disciplines to deliver robust, scalable, and future-ready control and infrastructure solutions. Trusted contributor to multidisciplinary teams with strong communication, documentation, and project execution skills.
+    </p>
+
+    <h2 data-animate>PROFESSIONAL SKILLS</h2>
+    <div class="skills-columns">
+        <ul>
+            <li><b>AV System Design & Integration</b></li>
+            <li><b>Control System Programming</b></li>
+            <li><b>Enterprise IT Administration</b></li>
+        </ul>
+        <ul>
+            <li><b>CAD Drafting & 3D Modeling</b></li>
+            <li><b>Technical Leadership & Training</b></li>
+            <li><b>Maritime Operations Leadership</b></li>
+        </ul>
+    </div>
+
+    <h2 data-animate>CERTIFICATIONS</h2>
+        <div class="certifications-columns">
+            <ul>
+                <li><b>AVIXA</b> - <i>CTS-I, CTS</i></li>
+                <li><b>CompTIA</b> - <i>A+, Network+, Security+</i></li>
+                <li><b>Extron</b> - <i>Control Specialist, AV Associate</i></li>
+                <li><b>Crestron</b> - <i>DMC-E-4K, DMC-D-4K, IVC-E, DCT-C, TCT-C, Flex, P301</i></li>
+                <li><b>AMX</b> - <i>Programmer, Technician (Enova)</i></li>
+            </ul>
+            <ul>    
+                <li><b>Dante</b> - <i>Level 1, 2, 3</i></li>
+                <li><b>QSC</b> - <i>Q-SYS Level 1, 2</i></li>
+                <li><b>Biamp</b> - <i>Tesira</i></li>
+                <li><b>US Coast Guard</b> - <i>Captain's License, 100 Ton Master</i></li>
+                <li><b>OSHA 30</b></li>
+            </ul>
+        </div>
+
+    <h2 data-animate>EMPLOYMENT HISTORY</h2>
+    <div class="job-entry" data-animate style="transition-delay: 0.1s;">
+        <div class="job-title">AV Programmer – Vision Technologies, Baltimore, MD (Mar 2024 – Present)</div>
+        <ul>
+        <li>Developed and implemented robust AV control systems using Crestron SIMPL, SIMPL#, and AMX Netlinx, integrating advanced touch panel interfaces that align with client branding and usability standards.</li>
+        <li>Collaborated with project managers, engineering teams, and stakeholders to design and deploy classified and open AV solutions for high-profile clients including the US DHS, FDA, FCC, DoD, and USSS.</li>
+        <li>Diagnosed and optimized AV-over-IP networks, control systems, and software integrations to meet mission-critical performance and security requirements.</li>
+        <li>Created and maintained system documentation, including source code, graphical user interface submittals, and end-user guides, while contributing to code standardization, GUI enhancements, and workflow improvements.</li>
+        </ul>
+    </div>
+    <div class="job-entry" data-animate style="transition-delay: 0.2s;">
+        <div class="job-title">AV Systems Engineer – Defense Informations Systems Agency (DISA), Ft. Meade, MD (Dec 2022 – Mar 2024)</div>
+        <ul>
+        <li>Spearheaded the design and implementation of next-gen conference and presentation systems across the Agency, integrating state-of-the-art AV systems and IP video streaming technology built on the Crestron NVX AV over IP platform.</li>
+        <li>Served as Subject Matter Expert for the operation and configuration of AV control and switching equipment throughout DISA facilities.</li>
+        <li>Developed and maintained design documentation including technical system drawings, specifications, configuration data, and UI/control program code for all existing and newly designed AV systems.</li>
+        <li>•	Created and updated control program code as well as touch panel UI designs for AMX and Crestron systems using NetLinx Studio, SIMPL, and VTPro.</li>
+        </ul>
+    </div>
+    <div class="job-entry" data-animate style="transition-delay: 0.3s;">
+        <div class="job-title">Audio Visual Project Engineer – Visual Sound Inc (Mar 2022 – Jan 2023)</div>
+        <ul>
+        <li>Designed and commissioned a wide variety of AV presentation and communication systems for various corporate, higher education, and government clients.</li>
+        <li>Evaluated system designs and bills of materials to ensure functionality per project scope of work.</li>
+        <li>Oversaw project execution from presales through commissioning and client hand off.</li>
+        </ul>
+    </div>
+    <div class="job-entry" data-animate style="transition-delay: 0.4s;">
+        <div class="job-title">AV Project Manager – Design & Integration (Sep 2019 – Mar 2022)</div>
+        <ul>
+        <li>Management of full project life-cycle for development and installation of commercial audio-visual communication and presentation systems including initial concept development, system design, procurement, change management, installation and build out, commissioning, and project close out phases.</li>
+        <li>Responsible for project contract values ranging from $30k to $5M for a wide variety of commercial, higher-education, government, and military clients.</li>
+        <li>Developed comprehensive training and development curriculum to guide inexperienced installation technicians through multi-year career path to achieve comprehensive set of industry-recognized certifications and skill set.</li>
+        </ul>
+    </div>
+    <div class="job-entry" data-animate style="transition-delay: 0.5s;">
+        <div class="job-title">Audio Visual Engineer – University of Baltimore (Dec 2017 – Sep 2019)</div>
+        <ul>
+        <li>Produced live and studio-recorded audio-visual content with internal and external university clients.</li>
+        <li>Operated digital audio and video recording equipment including audio/video switchers, networked control surfaces, live sound reinforcement, and VoIP/VTC communications hardware.</li>
+        <li>Designed, installed, upgraded, and maintained multiple audio-visual system buildouts for use in conference, classroom, performance, and event spaces throughout the university campus.</li>
+        </ul>
+    </div>
+    <div class="job-entry" data-animate style="transition-delay: 0.6s;">
+        <div class="job-title">IT Systems Administrator – Ayers Saint Gross (Apr 2014 – Sep 2017)</div>
+        <ul>
+        <li>Built, maintained, and deployed workstation and server images using Microsoft SCCM using custom build-specific driver packs allowing for full system builds in record time.</li>
+        <li>Invoked multiple redundant data backup solutions to safeguard against crypto and ransomware attacks reducing system recovery time from days to minutes.</li>
+        <li>Led the organization's first enterprise cloud migration by successfully transitioning on-premises Exchange Server infrastructure to Microsoft 365, establishing the foundation for full adoption of cloud-hosted services.</li>
+        <li>Served as SME for the full Autodesk design software library, configuring and deploying CAD applications tailored to specific project requirements.</li>
+        </ul>
+    </div>
+
+    <h2 data-animate>EDUCATION</h2>
+    <p><strong>University of Maryland, College Park, MD</strong> — Bachelor of Science, Computer Science (Aug 2019 – Present)</p>
+    <p><strong>CCBC, Catonsville, MD</strong> — AAS, CADD for Architecture and Engineering (Aug 2010 – Jun 2013)</p>
+
+    <h2 data-animate>PROJECT SHOWCASE</h2>
+    <div class="project" data-animate style="transition-delay: 0.1s;">
+        <b>Tri-class Secure VTC SCIFs (Various Sites)</b><br>
+        <strong>Client:</strong> DHS<br>
+        <strong>Role:</strong> AMX / Crestron Programmer<br>
+        <strong>Scale:</strong> Large ($1M – $5M)<br> 
+    </div>
+    <div class="project" data-animate style="transition-delay: 0.1s;">
+        <b>Campus NVX Upgrade</b><br>
+        <strong>Client:</strong> DISA<br>
+        <strong>Role:</strong> Design Engineer<br>
+        <strong>Scale:</strong> Enterprise ($5M+)<br>
+    </div>
+    <div class="project" data-animate style="transition-delay: 0.1s;">
+        <b>Altmeyer Building, Full AV Buildout</b><br>
+        <strong>Client:</strong> SSA HQ<br>
+        <strong>Role:</strong> Project Engineer / Project Manager<br>
+        <strong>Scale:</strong> Enterprise ($5M+)<br>
+    </div>
+    <div class="project" data-animate style="transition-delay: 0.1s;">
+        <b>Recording Studio and Suite</b><br>
+        <strong>Client:</strong> Baltimore School for the Arts<br>
+        <strong>Role:</strong> Design Engineer / Programmer<br>
+        <strong>Scale:</strong> Small ($0 – $500k)<br>    
+    </div>
+    <div class="project" data-animate style="transition-delay: 0.1s;">
+        <b>USMC Commandant Briefing Room</b><br>
+        <strong>Client:</strong> USMC (The Pentagon)<br>
+        <strong>Role:</strong> Commissioning Engineer<br>
+        <strong>Scale:</strong> Mid-Size ($500k – $1M)<br>
+    </div>
+
+    <a href="#" class="scroll-top">↑ Back to Top</a>
+
+    </div>
+
+    <footer class="site-footer">
+        LAST UPDATED: <span id="last-updated"></span><br>
+        All code, content, and design &copy; 2025 Joe Held, HeldSystems. All rights reserved.
+    </footer>
+
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+  const progressBar = document.getElementById('scroll-progress'); // ✅ This was missing
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = `${progress}%`;
+
+    if (progress >= 99.5) {
+        progressBar.style.opacity = '0';
+    } else {
+        progressBar.style.opacity = '1';
+    }
+  });
+
+  const scrollBtn = document.querySelector('.scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('show', window.scrollY > 300);
+  });
+</script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('✅ Service Worker registered'))
+      .catch(err => console.error('❌ SW registration failed:', err));
+  }
+</script>
+
+<script>
+  const el = document.getElementById("last-updated");
+  if (el) {
+    el.textContent = new Date().toLocaleDateString();
+  }
+</script>
+
+<script>
+  // Show the button when scrolling down
+  const backToTopButton = document.querySelector('.scroll-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll to top on click
+  backToTopButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+
+</body>
+</html>

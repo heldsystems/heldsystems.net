@@ -1,0 +1,179 @@
+/* Root Variables for Theming */
+:root {
+    /* Default Theme (Sophisticated Monochrome Terminal - Grey/Blue) */
+    --background: #0A0F1F; /* Dark Blue */
+    --text: #C0C5CF; /* Light Grey */
+    --accent-1: #8A9BA8; /* Muted Blue-Grey */
+    --accent-2: #4C5C68; /* Darker Grey-Blue */
+    --highlight: #AFCDE7; /* Subtle Blue Highlight */
+    --navbar-bg: rgba(10, 15, 31, 0.8);
+    --button-bg: rgba(255, 255, 255, 0.2);
+    --button-hover-bg: rgba(255, 255, 255, 0.5);
+}
+
+/* Deep Blue Futuristic Terminal Theme */
+[data-theme="blue"] {
+    --background: #0A0F1F;
+    --text: #C0C5CF;
+    --accent-1: #8A9BA8;
+    --accent-2: #4C5C68;
+    --highlight: #AFCDE7;
+    --navbar-bg: rgba(10, 15, 31, 0.8);
+    --button-bg: rgba(255, 255, 255, 0.2);
+    --button-hover-bg: rgba(255, 255, 255, 0.5);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--text);
+    z-index: 2;
+    width: 100%;
+}
+
+#hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* NAVIGATION */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--navbar-bg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#navbar.show {
+    transform: translateY(0);
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#bio {
+    display: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.bio-text {
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--accent-2);
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+    background: var(--button-bg);
+    color: var(--text);
+    border-radius: 5px;
+}
+
+button:hover {
+    background: var(--button-hover-bg);
+}
+
+/* SOCIAL LINKS */
+.social-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+/* SCROLL ANIMATIONS */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+    background: var(--navbar-bg);
+    color: var(--text);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* BACK TO TOP BUTTON */
+#back-to-top {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: var(--button-bg);
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+#back-to-top:hover {
+    background: var(--button-hover-bg);
+}

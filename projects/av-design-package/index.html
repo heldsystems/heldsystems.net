@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joe Held – Sample AV Design Package</title>
+  <meta name="description" content="Sample AV Design Drawing Package by Joe Held – Divisible Government Conference Center.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', Calibri, sans-serif;
+      color: #111;
+      background-color: #111;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('/images/av-cad-bg.png') center center / cover no-repeat;
+      z-index: -1;
+      opacity: 1;
+      animation: zoomSlowly 90s ease-in-out infinite alternate;
+    }
+    .container {
+      background-color: #fdfaf4;
+      color: #111;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      padding-top: 3rem;
+      line-height: 1.6;
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+      transition: box-shadow 0.3s ease;
+    }
+    .container:hover {
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.35);
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: #fdfaf4;
+      padding: 1rem 0 0.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid #ddd;
+    }
+    .header-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .headshot-wrapper {
+      flex: 0 0 120px; 
+      display: flex;
+      justify-content: center;
+      padding-left: 20px;
+    }
+    .headshot {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .header-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .contact {
+      font-size: 1rem;
+      margin-top: 0.2rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .profile-link {
+      display: inline-block;
+      background: #003366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.2s ease;
+    }
+    .profile-link:hover {
+      background: #0055aa;
+    }
+    .profile-link:focus {
+      outline: 2px solid #00cc66;
+      outline-offset: 3px;
+    }
+
+    .pdf-mobile {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .pdf-desktop {
+        display: none;
+      }
+      .pdf-mobile {
+        display: block;
+      }
+    }
+
+    iframe {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #383838;
+    }
+    @keyframes zoomSlowly {
+      0% { background-size: 105%; }
+      100% { background-size: 110%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-flex">
+        <div class="headshot-wrapper">
+          <img src="/images/headshot.jpg" alt="Joe Held Headshot" class="headshot">
+        </div>
+        <div class="header-text">
+          <h1>Joe Held</h1>
+          <div class="contact">
+            443.824.2250 | 
+            <a href="mailto:joe.held@gmail.com">joe.held@gmail.com</a> | 
+            <a href="https://heldsystems.net">heldsystems.net</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="intro">
+        <h2 style="color: #003366;">AV System Drawing Package <br> Divisible Conference Center (Sample Project)</h2>
+          <p>
+            This 58-sheet drawing set showcases a full audiovisual system design for a theoretical government-grade divisible conference center. The project includes three multipurpose rooms, a central AV control room, and supporting spaces such as a recording studio, lobby displays, and secure conferencing suites.
+          </p>
+          <ul style="margin-left: 1rem;">
+            <li>Scalable AV infrastructure design across multiple room types</li>
+            <li>Integration of signal flow diagrams, device schedules, cable schedules, and rack elevations</li>
+            <li>Secure routing concepts supporting multi-classification (SIPR/NIPR) workflows</li>
+            <li>Standards-compliant drafting conventions and custom title blocks</li>
+            <li>Realistic device selection and labeling consistent with enterprise deployments</li>
+          </ul>
+          <p>
+            This drawing set departs from traditional left-to-right, signal-type-separated AV documentation in favor of a centralized, field-optimized layout. Devices are grouped by physical location and logical relationship, with signal paths laid out clearly and linearly to minimize flags, wire tags, and page jumps.
+
+This approach significantly reduces installation confusion, speeds up commissioning, and improves long-term maintainability — especially in environments where the original integrator is no longer involved. While not yet common in the AV industry, this documentation style reflects a practical, technician-centered design philosophy.
+          </p>
+        <p style="font-style: italic; color: #555;">
+            This design is conceptual and does not represent a real-world facility. It is presented here for demonstration purposes only.
+        </p>
+    </p>
+
+<div class="pdf-desktop">
+  <iframe
+    src="viewer/viewer.html?file=/documents/example-av-design-package-sample.pdf"
+    width="100%"
+    height="800px"
+    style="border: none;"
+    title="AV Design Package Viewer"
+  ></iframe>
+
+    <a href="/documents/example-av-design-package.pdf" class="profile-link" style="margin-top: 1.5rem; display: inline-block;">
+      📅 Download Full AV Design Package (PDF - 58pgs)
+    </a>
+
+</div>
+
+<div class="pdf-mobile">
+  <img src="/images/av-sample-preview.png" alt="Preview of AV sample package"
+       style="width: 100%; max-width: 700px; border-radius: 6px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-bottom: 1rem;">
+
+  <a href="/documents/example-av-design-package-sample.pdf"
+     class="profile-link"
+     target="_blank"
+     rel="noopener"
+     style="display: inline-block; margin-bottom: 1rem;">
+    ▶️ View Sample Drawing Package (PDF)
+  </a>
+
+
+    <a href="/documents/example-av-design-package.pdf" class="profile-link" style="margin-top: 1.5rem; display: inline-block;">
+      📅 Download Full AV Design Package (PDF - 58pgs)
+    </a>
+
+  </div>
+
+  
+    <footer>
+      All content © 2025 Joe Held – HeldSystems.net
+    </footer>
+</body>
+</html>

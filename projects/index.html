@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joe Held – Professional Profiles</title>
+  <meta name="description" content="Explore Joe Held's professional resume profiles in Systems Engineering, AV, Technical Writing, and CAD Design.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Inter', Calibri, sans-serif;
+      color: #111;
+      background-color: #111;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('/images/av-cad-bg.png') center center / cover no-repeat;
+      z-index: -1;
+      opacity: 1;
+      animation: zoomSlowly 90s ease-in-out infinite alternate;
+    }
+    .container {
+    background-color: #fdfaf4;
+    color: #111;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    padding-top: 3rem;
+    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.35)
+    }	
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #003366;
+    }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fdfaf4;
+    padding: 1rem 0 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+  }
+  .header h1 {
+    font-size: 2.75rem;
+    margin: 0;
+    color: #003366;
+  }
+
+  .header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .headshot-wrapper {
+    flex: 0 0 120px; 
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .headshot {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-text {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .contact {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+
+
+    .intro {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .link-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .profile-link {
+      display: inline-block;
+      background: #003366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.2s ease;
+    }
+    .profile-link:hover {
+      background: #0055aa;
+    }
+    
+    .profile-link:focus {
+    outline: 2px solid #00cc66;
+    outline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #383838;
+    }
+
+    @keyframes zoomSlowly {
+      0% {
+        background-size: 105%;
+      }
+      100% {
+        background-size: 110%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+            <div class="header-flex">
+              <div class="headshot-wrapper">
+                <img src="/images/headshot.jpg" alt="Joe Held Headshot" class="headshot">
+              </div>
+              <div class="header-text">
+                <h1>Joe Held</h1>
+                <div class="contact">
+                  443.824.2250 | 
+                  <a href="mailto:joe.held@gmail.com">joe.held@gmail.com</a> | 
+                  <a href="https://heldsystems.net">heldsystems.net</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    <p class="intro">
+      PROJECTS PAGE
+    </p>
+    <footer>
+      All content © 2025 Joe Held – HeldSystems.net
+    </footer>
+  </div>
+</body>
+</html>
